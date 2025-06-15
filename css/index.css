@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 402;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+/* Секция 1 - Hero */
+.b1Zoro-menu {
+    background-image: url("/medeo/zoro_imag/Group\ 68\ \(1\).png");
+    height: auto;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.b1_menu {
+    display: flex;
+    background-color: rgba(88, 88, 88, 0.45);
+    height: auto;
+    min-height: 91px;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 20px;
+}
+
+.b1_menu ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 15px 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.b1_menu ul li a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+    white-space: nowrap;
+}
+
+.b1_text {
+    padding: 80px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    width: 100%;
+    max-width: 542px;
+    font-weight: 700;   
+    font-size: clamp(36px, 8vw, 90px);
+    transition: 0.5s;
+}
+
+.b1_text p {
+    width: 100%;
+    max-width: 376px;
+    font-weight: 400;
+    color: white;
+    padding-top: 20px;
+    font-size: clamp(16px, 2.5vw, 20px);
+    transition: 0.5s;
+}
+
+/* Секция 2 - Блок с карточками */
+.b2 {
+    height: auto;
+    padding: 35px 15px 50px;
+    background-color: rgba(37, 43, 66, 1);
+    color: white;
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 40px);
+}
+
+.b2 h2 {
+    text-align: center;
+    padding-top: 20px;
+    transition: 0.5s;
+}
+
+.b2_nn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-top: 40px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.b2_nn div {
+    background-color: rgba(217, 217, 217, 1);
+    width: 100%;
+    max-width: 328px;
+    height: auto;
+    min-height: 513px;
+    border-radius: 15px;
+    background-size: cover;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+/* Секция 3 - Новинки */
+.b3_new {
+    background-color: rgba(171, 24, 3, 1);
+    height: auto;
+    padding: 35px 15px 50px;
+    color: white;
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 40px);
+}
+
+.b3_1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.b3_1 div {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 202px;
+    height: 285px;
+    background-color: rgba(217, 217, 217, 1);
+    transition: 1s;
+}
+
+/* Форма подписки */
+.b3_new form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 800px;
+    margin: 30px auto 0;
+}
+
+.b3_new form input {
+    width: 100%;
+    max-width: 685px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: rgba(171, 24, 3, 1);
+    border: 1px solid white;
+    margin-top: 20px;
+    padding: 0 15px;
+    color: white;
+}
+
+.bu1 {
+    border-radius: 15px;
+    background-color: rgba(171, 24, 3, 1);
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Контактная форма */
+.contact {
+    height: auto;
+    padding: 50px 15px;
+    background-color: rgba(171, 24, 3, 1);
+}
+
+form {
+    width: 100%;
+    max-width: 444px;
+    height: auto;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    height: 44px;
+    border-radius: 15px;
+    margin-top: 15px;
+    border: none;
+    background-color: rgba(37, 43, 66, 1);
+    padding-left: 15px;
+    color: white;
+}
+
+form h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form button {
+    margin: 30px auto 0;
+    padding: 12px 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(189, 97, 59, 1);
+    color: rgb(255, 255, 255);
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: rgba(210, 110, 70, 1);
+    transform: scale(1.05);
+}
+
+/* Футер */
+footer {
+    background-color: rgba(171, 24, 3, 1);
+    height: auto;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.footer1 a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.footer1 a:hover {
+    color: white;
+}
+
+/* Ховер-эффекты */
+h1:hover, h2:hover, p:hover {
+    color: rgb(255, 243, 82);
+}
+
+.b3_1 div:hover {
+    transform: scale(1.1);
+}
+
+.b2_nn div:hover {
+    transform: scale(1.05);
+}
+
+/* Медиазапросы для тонкой настройки */
+@media (max-width: 768px) {
+    .b1_text {
+        padding-top: 50px;
+        padding-left: 15px;
+        text-align: center;
+    }
+    
+    .b1_text h1,
+    .b1_text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .b2_nn div {
+        min-height: 400px;
+    }
+    
+    .b3_1 div {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .b1_menu ul {
+        gap: 10px;
+    }
+    
+    .b1_menu ul li a {
+        font-size: 14px;
+    }
+    
+    .b2_nn div {
+        min-height: 350px;
+    }
+    
+    form button {
+        width: 100%;
+    }
+}
+
+.b3_new h2 {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: clamp(24px, 4vw, 40px);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.b3_new p {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: clamp(16px, 2vw, 20px);
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+/* Если "LESS THAN $3" находится в отдельном элементе */
+.price-tag {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: clamp(18px, 2.5vw, 24px);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+
+
+
+
+

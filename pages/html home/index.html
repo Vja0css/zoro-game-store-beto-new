@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@402&display=swap" rel="stylesheet">
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 402;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+/* Секция 1 - Hero */
+.b1Zoro-menu {
+    background-image: url("/medeo/zoro_imag/Group\ 68\ \(1\).png");
+    height: auto;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.b1_menu {
+    display: flex;
+    background-color: rgba(88, 88, 88, 0.45);
+    height: auto;
+    min-height: 91px;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 20px;
+}
+
+.b1_menu ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 15px 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.b1_menu ul li a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+    white-space: nowrap;
+}
+
+.b1_text {
+    padding: 80px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    width: 100%;
+    max-width: 542px;
+    font-weight: 700;   
+    font-size: clamp(36px, 8vw, 90px);
+    transition: 0.5s;
+}
+
+.b1_text p {
+    width: 100%;
+    max-width: 376px;
+    font-weight: 400;
+    color: white;
+    padding-top: 20px;
+    font-size: clamp(16px, 2.5vw, 20px);
+    transition: 0.5s;
+}
+
+/* Секция 2 - Блок с карточками */
+.b2 {
+    height: auto;
+    padding: 35px 15px 50px;
+    background-color: rgba(37, 43, 66, 1);
+    color: white;
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 40px);
+}
+
+.b2 h2 {
+    text-align: center;
+    padding-top: 20px;
+    transition: 0.5s;
+}
+
+.b2_nn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-top: 40px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.b2_nn div {
+    background-color: rgba(217, 217, 217, 1);
+    width: 100%;
+    max-width: 328px;
+    height: auto;
+    min-height: 513px;
+    border-radius: 15px;
+    background-size: cover;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+/* Секция 3 - Новинки */
+.b3_new {
+    background-color: rgba(171, 24, 3, 1);
+    height: auto;
+    padding: 35px 15px 50px;
+    color: white;
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 40px);
+}
+
+.b3_1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.b3_1 div {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 202px;
+    height: 285px;
+    background-color: rgba(217, 217, 217, 1);
+    transition: 1s;
+}
+
+/* Форма подписки */
+.b3_new form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 800px;
+    margin: 30px auto 0;
+}
+
+.b3_new form input {
+    width: 100%;
+    max-width: 685px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: rgba(171, 24, 3, 1);
+    border: 1px solid white;
+    margin-top: 20px;
+    padding: 0 15px;
+    color: white;
+}
+
+.bu1 {
+    border-radius: 15px;
+    background-color: rgba(171, 24, 3, 1);
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Контактная форма */
+.contact {
+    height: auto;
+    padding: 50px 15px;
+    background-color: rgba(171, 24, 3, 1);
+}
+
+form {
+    width: 100%;
+    max-width: 444px;
+    height: auto;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    height: 44px;
+    border-radius: 15px;
+    margin-top: 15px;
+    border: none;
+    background-color: rgba(37, 43, 66, 1);
+    padding-left: 15px;
+    color: white;
+}
+
+form h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form button {
+    margin: 30px auto 0;
+    padding: 12px 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(189, 97, 59, 1);
+    color: rgb(255, 255, 255);
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: rgba(210, 110, 70, 1);
+    transform: scale(1.05);
+}
+
+/* Футер */
+footer {
+    background-color: rgba(171, 24, 3, 1);
+    height: auto;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.footer1 a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.footer1 a:hover {
+    color: white;
+}
+
+/* Ховер-эффекты */
+h1:hover, h2:hover, p:hover {
+    color: rgb(255, 243, 82);
+}
+
+.b3_1 div:hover {
+    transform: scale(1.1);
+}
+
+.b2_nn div:hover {
+    transform: scale(1.05);
+}
+
+/* Медиазапросы для тонкой настройки */
+@media (max-width: 768px) {
+    .b1_text {
+        padding-top: 50px;
+        padding-left: 15px;
+        text-align: center;
+    }
+    
+    .b1_text h1,
+    .b1_text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .b2_nn div {
+        min-height: 400px;
+    }
+    
+    .b3_1 div {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .b1_menu ul {
+        gap: 10px;
+    }
+    
+    .b1_menu ul li a {
+        font-size: 14px;
+    }
+    
+    .b2_nn div {
+        min-height: 350px;
+    }
+    
+    form button {
+        width: 100%;
+    }
+}
+
+.b3_new h2 {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: clamp(24px, 4vw, 40px);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.b3_new p {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: clamp(16px, 2vw, 20px);
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+/* Если "LESS THAN $3" находится в отдельном элементе */
+.price-tag {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: clamp(18px, 2.5vw, 24px);
+    margin-bottom: 40px;
+    position: relative;
+}
+    </style>
+</head>
+<body>
+     <div class="b1Zoro-menu">
+        <div class="b1_menu">
+            <a href="index.html"><img src="/medeo/zoro_imag/ae0d1858-d262-46e5-9357-09c4c09cbe6b 1.png" alt="zoro0game0store_icon"> </a> <!-- иконка сайта которая также работает как ссылка на главную страницу -->
+            <ul>
+                <li><a style="color: rgb(255, 255, 255); font-size: 20px;" href="/pages/html home/index.html">HOME</a></li>
+                <li><a style="color: rgba(255, 255, 255, 0.49); font-size: 20px;" href="/pages/games.html">GAMES</a></li>
+                <li><a style="color: rgba(255, 255, 255, 0.49); font-size: 20px;" href="/pages/console.html">CONSOLE</a></li>
+                <li><a style="color: rgba(255, 255, 255, 0.49); font-size: 20px;" href="/pages/more.html">MORE</a></li>
+            </ul>            
+        </div>
+        <div class="b1_text">
+            <h1>you were waiting for this!</h1> 
+            <p>
+                🔹 now with an updated design and new functionality making it easier to use
+            </p>
+        </div>
+    </div>
+    <div class="b2">
+         <h2>TOP OF THE DAY</h2>
+        <div class="b2_nn">
+            <div style="background-image: url(https://upload.wikimedia.org/wikipedia/ru/0/03/Red_Dead_Redemption_2_coverart.jpg);"><img src="/medeo/zoro_imag/Group 1 (29).png" alt=""><p>Red Dead Redemption 2</p></div>
+            <div><img src="/medeo/zoro_imag/Group 2 (2).png" alt=""></div>
+            <div><img src="/medeo/zoro_imag/Group 3 (2).png" alt=""></div>
+        </div>
+    </div>
+     <div class="b3_new">
+        <h2>NEW</h2>
+        <div class="b3_1">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="b3_1" style="padding-top: 35px;">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+    </div>
+    <div class="b3_new" style=" background-color: rgba(37, 43, 66, 1);">
+        <h2>CATEGORIES</h2>
+        <div class="b3_1">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="b3_1" style="padding-top: 35px;">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p style="padding-top: 100px;">Can't find what you're looking for?
+
+            Use the search</p>
+            <form action="">
+                <input type="text" placeholder="search">
+                <button class="bu1"><img src="/medeo/zoro_imag/icon/free-icon-search-5614495 2.png" alt=""></button>
+            </form>
+    </div>
+
+    <div class="b3_new" >
+        <h2>LESS THAN $3</h2>
+        <div class="b3_1">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="b3_1" style="padding-top: 35px;">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    
+    <div class="contact">
+        <form action="">
+             <h2>ОБРАТНАЯ СВЯЗЬ</h2>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Введите сообщение">
+            <button>ОТПРАВИТЬ</button>
+        </form>
+    </div>
+    <footer>
+         <div class="footer">
+            <div class="footer1" >
+                <img src="/medeo/zoro_imag/ae0d1858-d262-46e5-9357-09c4c09cbe6b 2.png" alt="" style="padding-right: 31px; ;">
+                <a href="https://vk.com/zorogamestore"><p>vk</p></a>
+                <a href="https://t.me/ZoGJam/35"><p>telegram</p></a>
+                <a href="https://discord.gg/JBrrPPNp"><p>Discord</p></a>
+                <p style="color: rgba(238, 255, 0, 1) ; padding-left: 50px;">страницы:</p>
+                <a href="/pages/html home/index.html"><p>home</p></a>
+                <a href="/pages/games.html"><p>games</p></a>
+                <a href="/pages/console.html"><p>console</p></a>
+                <p style="color: rgba(238, 255, 0, 1) ; padding-left: 50px;">инфо:</p>
+                <p>о нас</p>
+                <p>Domen: zoro-game.store</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
